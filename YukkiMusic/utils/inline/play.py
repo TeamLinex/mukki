@@ -51,8 +51,15 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
         ],
         [
+            InlineKeyboardButton("✦ Support", url=f"https://t.me/UNIQUE_SOCIETY"),
+                InlineKeyboardButton(
+                    "Channel ✦", url=f"https://t.me/THE_BLAZE_NETWORK"
+             ),
+        ],
+        [
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
+                text=_["CLOSE_BUTTON"],
+                callback_data=f"forceclose {videoid}|{user_id}",
             )
         ],
     ]
